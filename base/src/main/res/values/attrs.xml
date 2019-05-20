@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="topbar_bg_color" format="color|reference" />
+        <attr name="topbar_left_icon" format="reference" />
+        <attr name="topbar_left_icon_visible" format="boolean" />
+        <attr name="topbar_title_txt" format="string|reference" />
+        <attr name="topbar_title_color" format="reference|color" />
+        <attr name="topbar_right_icon" format="reference" />
+        <attr name="topbar_right_txt" format="reference|string" />
+        <attr name="topbar_divider_visible" format="boolean" />
+    </declare-styleable>
+
+    <!--带文字和箭头的listItem-->
+    <declare-styleable name="TxtArrowItem">
+        <attr name="ta_leftTxt" format="reference|string" /><!--左侧文字-->
+        <attr name="ta_leftTxtColor" format="reference|color" /><!--左侧文字颜色-->
+        <attr name="ta_leftTxtSize" format="reference|dimension" /><!--左侧文字大小-->
+        <attr name="ta_rightArrowVisible" format="boolean" /><!--右边arrow是否可见-->
+        <attr name="ta_rightTxt" format="string|dimension" /><!--右侧文字-->
+        <attr name="ta_rightTxtColor" format="reference|color" /><!--右侧文字颜色-->
+        <attr name="ta_rightTxtSize" format="reference|dimension" /><!--右侧文字大小-->
+        <attr name="ta_right_icon" format="reference" /><!--右侧icon-->
+        <attr name="ta_switchButtonVisible" format="boolean" /><!--右侧switch-->
+        <attr name="ta_checked" format="boolean" /><!--右侧switch是否被选中-->
+        <attr name="ta_dividerVisible" format="boolean" /><!--是否需要divider-->
+        <attr name="ta_left_icon" format="reference" /><!--左侧icon-->
+    </declare-styleable>
+
+</resources>
