@@ -13,7 +13,6 @@ android {
     dataBinding {
         enabled = true
     }
-
     buildTypes {
 
         release {
@@ -44,6 +43,6 @@ dependencies {
     api rootProject.ext.dependencies["permission"]
     api rootProject.ext.dependencies["avi"]
     api rootProject.ext.dependencies["numberprogressbar"]
-    api rootProject.ext.dependencies["adapterHelper"]
+//    api rootProject.ext.dependencies["adapterHelper"]
     api rootProject.ext.dependencies["immersionbar"]
 }
