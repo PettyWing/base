@@ -1,11 +1,40 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--.Light.NoActionBar-->
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/transparent</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <!--各控制元件(如：check box、switch 或是 radoi) 被勾选 (checked) 或是选定 (selected) 的颜色-->
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--App bar 上的标题与更多菜单中的文字颜色-->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/transparent</item>
+
+        <!--Navigation bar color(for v21)-->
+        <!--<item name="android:navigationBarColor">@color/accent_material_light</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- 使用 API Level 22 編譯的話，要拿掉前綴字android: -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="label" parent="TextAppearance.AppCompat">
+        <!-- 默认状态提示颜色和字体-->
+        <item name="android:textColor">@color/txt_color1</item>
+        <item name="android:textColorHint">@color/txt_color3</item>
+        <item name="android:textSize">14sp</item>
+        <!-- 下面可以根据需要设置，如果没有将默认使用默认theme的颜色 -->
+        <!-- Label标签的颜色 -->
+        <item name="colorAccent">@color/themeColor</item>
+        <!-- 默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/lightDividerColor</item>
+        <!-- 选择的底线颜色 -->
+        <item name="colorControlActivated">@color/themeColor</item>
     </style>
 
 </resources>

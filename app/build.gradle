@@ -12,6 +12,11 @@ android {
         versionCode rootProject.ext.community.versionCode
         versionName rootProject.ext.community.versionName
     }
+
+    dataBinding {
+        enabled = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -22,5 +27,5 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':base')
+    api rootProject.ext.support["appcompat-v7"]
 }
