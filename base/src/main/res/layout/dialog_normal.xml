@@ -10,7 +10,7 @@
 
         <variable
             name="profile"
-            type="com.komect.bean.DialogBean" />
+            type="com.xyc.bean.DialogBean" />
 
     </data>
 
